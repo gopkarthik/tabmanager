@@ -1,0 +1,33 @@
+.blue-background-class {
+	background-color: #C8EBFB;
+}
+
+div.list-group-item:hover {
+	background-color: #C8EBFB;
+}
+
+button.tab-action-element {
+	line-height: 1;
+}
+
+.selected {
+	background-color: #f9c7c8;
+	border: solid red 1px !important;
+	z-index: 1 !important;
+}
+
+.handle {
+	cursor: grab;
+}
+
+.window-title-container {
+	background-color: rgb(238, 238, 238);
+}
+
+.window-title {
+	cursor: pointer;
+}
+
+.list-group-item {
+	border: 0;
+}

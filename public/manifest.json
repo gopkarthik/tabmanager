@@ -1,0 +1,45 @@
+{
+    "background": {
+        "scripts": ["static/js/background-tabmanager.js"]
+    },
+    
+    "browser_action": {
+        "default_icon": "icons/border-48.png",
+        "default_title": "Tab Save",
+        "default_popup": "index.html",
+        "browser_style": true
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "test@example.com"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["static/js/tabmanager.js"]
+        }
+    ],
+
+    "description": "Manage all your tabs and sessions.",
+
+    "icons": {
+        "48": "static/icons/border-48.png"
+    },
+
+    "manifest_version": 2,
+
+    "name": "Tab Manager",
+
+    "permissions": [
+        "<all_urls>",
+        "bookmarks",
+        "clipboardWrite",
+        "downloads",
+        "tabs"
+    ],
+    
+    "version": "0.1"
+}
